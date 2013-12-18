@@ -1,0 +1,8 @@
+{
+  "name":        "yapp",
+  "version":     "0.0.1",
+  "description": "Yet Another Param Parser for CLI program argv params",
+  "main":        "yapp.js",
+  "dependencies": {
+  }
+}

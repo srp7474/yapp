@@ -1,0 +1,81 @@
+Test Yapp starting
+Main Result ----
+ oOpt=%o { bBool: false,
+  sOpt: null,
+  sReqd: 'cscscs',
+  oProp: {},
+  sEnv: 'test env str' }
+===================== test 10 start ===================
+---------- Help for yapp-test.js --------------------
+Parm  Type      Usage
+-bool boolean   test Bool switch
+-ostr str(opt)  test optional string
+-rstr str(reqd) test required string
+-D    def prop  test properties
+process.exit code=4 taken
+Error taken %o [Error: Process exit caught]
+test 10 OK
+===================== test end ===================
+===================== test 20 start ===================
+oParms not supplied
+process.exit code=4 taken
+Error taken %o [Error: Process exit caught]
+test 20 OK
+===================== test end ===================
+===================== test 30 start ===================
+oParms is not an Array
+process.exit code=4 taken
+Error taken %o [Error: Process exit caught]
+test 30 OK
+===================== test end ===================
+===================== test 40 start ===================
+oParms has no rows
+process.exit code=4 taken
+Error taken %o [Error: Process exit caught]
+test 40 OK
+===================== test end ===================
+===================== test 50 start ===================
+Row 0 not an Array
+process.exit code=4 taken
+Error taken %o [Error: Process exit caught]
+test 50 OK
+===================== test end ===================
+===================== test 60 start ===================
+Row 0 col count not 4
+process.exit code=4 taken
+Error taken %o [Error: Process exit caught]
+test 60 OK
+===================== test end ===================
+===================== test 70 start ===================
+oParms row=0 Col=0 not string but object
+process.exit code=4 taken
+Error taken %o [Error: Process exit caught]
+test 70 OK
+===================== test end ===================
+===================== test 80 start ===================
+oParms row=0 type=x not implemented
+process.exit code=4 taken
+Error taken %o [Error: Process exit caught]
+test 80 OK
+===================== test end ===================
+===================== test 90 start ===================
+oParms row=0 parm=bad must start with '-'
+process.exit code=4 taken
+Error taken %o [Error: Process exit caught]
+test 90 OK
+===================== test end ===================
+===================== test 100 start ===================
+Test Result {"bBool":false,"sOpt":null,"sReqd":"test100","oProp":{"p1":"P1","p2":null,"p3":""},"sEnv":"test env str"}
+test 100 OK
+===================== test end ===================
+===================== test 160 start ===================
+env variable T_ENV has no value or default
+process.exit code=4 taken
+Error taken %o [Error: Process exit caught]
+test 160 OK
+===================== test end ===================
+===================== test 170 start ===================
+Test Result {"sEnv":"default value","bBool":false,"sOpt":null,"sReqd":"test100","oProp":{}}
+test 170 OK
+===================== test end ===================
+Test Yapp ending
