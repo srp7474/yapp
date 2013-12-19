@@ -127,3 +127,24 @@ The `Type` values must be one of the following values
         will cause error unless the default `opts` is supplied and contains
         a name for the TargetName.
 ```
+#### Processing Sequence for yapp.parse(parms,[,opts]) call ####
+
+1. The `parms` table is validated.  Any errors are reported and the program is
+terminated with a call to `process.exit(4)`.
+
+2. If no `opts` object is supplied an empty one is produced.
+
+3. Default values from the `parms` table are generated.
+
+4. The command line parameters are processed against the `parms` table.
+
+5. If any errors are detected such as an unknown command line string a
+diagnostic is displayed, the help information is displayed and the program is
+terminated with a call to `process.exit(4)`.
+
+6. A check is made the required strings are provided (Type 'S').  If any are
+missing a diagnostic is displayed, the help information is displayed and the
+program is terminated with a call to `process.exit(4)`.
+
+7. The resulting `opts` Object is returned.
+
