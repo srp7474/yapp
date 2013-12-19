@@ -1,8 +1,19 @@
 {
   "name":        "yapp",
   "version":     "0.0.1",
+  "author":      "Steve Pritchard<blog.pritchard@gmail.com>",
   "description": "Yet Another Param Parser for CLI program argv params",
-  "main":        "yapp.js",
+  "main":        "lib/yapp.js",
+  "repository":  {
+                 "type": "git",
+                 "url":  "git://github.com/srp7474/yapp"
+  },
   "dependencies": {
-  }
+  },
+  "engines":      {
+                    "node": ">=0.10"
+  },
+  "keywords":     ["cli","parser","args","argv","param","parameter"],
+  "license":      "MIT"
 }
+

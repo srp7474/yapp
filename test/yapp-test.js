@@ -3,7 +3,7 @@
 var log = console.log;
 
 
-var yapp = require("./yapp.js");
+var yapp = require("../lib/yapp.js");
 
 
 log("Test Yapp starting");

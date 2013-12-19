@@ -142,9 +142,9 @@ terminated with a call to `process.exit(4)`.
 diagnostic is displayed, the help information is displayed and the program is
 terminated with a call to `process.exit(4)`.
 
-6. A check is made the required strings are provided (Type 'S').  If any are
-missing a diagnostic is displayed, the help information is displayed and the
-program is terminated with a call to `process.exit(4)`.
+6. A check is made that the required strings are provided (Type 'S').  If any
+are missing a diagnostic is displayed, the help information is displayed and
+the program is terminated with a call to `process.exit(4)`.
 
 7. The resulting `opts` Object is returned.
 
