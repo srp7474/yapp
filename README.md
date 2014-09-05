@@ -123,6 +123,9 @@ The `Type` values must be one of the following values
    'b'  Optional boolean value will set TargetName to true if present
         TargetName will be defaulted to false in output object
 
+   'p'  Optional property object storing key/value string pairs specified as key=value or key=
+        TargetName will be an object to which the key/value pairs will be added.
+
    'e'  TargetName set to Col[2] value.  If value is not set
         will cause error unless the default `opts` is supplied and contains
         a name for the TargetName.
