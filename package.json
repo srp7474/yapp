@@ -1,6 +1,6 @@
 {
   "name":        "yapp",
-  "version":     "0.0.1",
+  "version":     "0.0.2",
   "author":      "Steve Pritchard<blog.pritchard@gmail.com>",
   "description": "Yet Another Param Parser for CLI program argv params",
   "main":        "lib/yapp.js",
